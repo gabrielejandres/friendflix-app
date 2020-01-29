@@ -1,14 +1,52 @@
-.welcome-card img {
-  max-height: 35vh;
-  overflow: hidden;
+/* CONFIGURAÇÕES GERAIS */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+*{
+	font-family: 'Quicksand', sans-serif;
 }
 
-/* mudar a cor do título do card para vermelho */
+
+/* CARD */
 ion-card-title{
 	color: rgba(255, 0, 0, 0.7);
+	font-size: 1.5em;
 }
 
-/* colocar todos os itens da lista de resources em negrito */
-ion-label{
+ion-card-content{
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+ion-card-content p{
+	padding: 2%;
+}
+
+/* SEÇÃO DE LIKES E DISLIKES */
+.reaction{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.reaction div{
+	padding: 2%;
+	text-align: center;
+}
+
+/* AVISO DE SPOILER */
+.spoiler{
+	display: grid;
+	grid-template-columns: 10% 90%;
+	align-items: center;
 	font-weight: bold;
+}
+
+.spoiler ion-icon{
+	width: 80%;
+	height: 80%;
+}
+
+/* DATA */
+#date{
+	margin-left: 73%;
 }

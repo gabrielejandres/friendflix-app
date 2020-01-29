@@ -36,7 +36,7 @@ export class HomePage {
 		userName: "anamartins",
 		attachment: true, 
 		contentText: "Quinta temporada é a melhor, com a filha dele.", 
-		contentFile: "quintatemporada.png",
+		contentFile: "quintatemporada.jpg",
 		date: "27/01/2020", 
 		spoiler: true,
 		likeState: true,
@@ -58,8 +58,22 @@ export class HomePage {
 		likes: 12,
 		dislikes: 0},
 
-		{ postTitle: "Breaking Bad é horrível",
+		{ postTitle: "Prison Break: melhor série da vidaaaaa",
 		postId: 3,
+		userId: 14,
+		userName: "carloseduardo",
+		attachment: true, 
+		contentText: "Michael Scofield sua inteligência me inveja", 
+		contentFile: "prison-break.jpg",
+		date: "30/01/2020", 
+		spoiler: false,
+		likeState: false,
+		dislikeState: false,
+		likes: 45,
+		dislikes: 0},
+
+		{ postTitle: "Breaking Bad é horrível",
+		postId: 4,
 		userId: 7,
 		userName: "lanafernandes",
 		attachment: false, 
@@ -72,21 +86,21 @@ export class HomePage {
 		likes: 25,
 		dislikes: 7},
 
-		{ postTitle: "Prison Break: melhor série da vidaaaaa",
-		postId: 4,
-		userId: 14,
-		userName: "carloseduardo",
+		{ postTitle: "Vis a vis é supervalorizada",
+		postId: 5,
+		userId: 8,
+		userName: "rebeccaferreira",
 		attachment: true, 
-		contentText: "Michael Scofield sua inteligência me inveja", 
-		contentFile: "prison-break.png",
-		date: "30/01/2020", 
-		spoiler: false,
+		contentText: "Achei o relacionamento da Cachinhos e da Macarena forçado", 
+		contentFile: "visavis.jpg",
+		date: "31/01/2020", 
+		spoiler: true,
 		likeState: true,
 		dislikeState: false,
-		likes: 45,
-		dislikes: 0}];
+		likes: 7,
+		dislikes: 8}];
 
-	 // MÉTODOS DA CLASSE
+	/* MÉTODOS DA CLASSE */
 
 	//curtir o post
 	likePost(Post:any):void{
