@@ -8,6 +8,8 @@ import { SeriesPageRoutingModule } from './series-routing.module';
 
 import { SeriesPage } from './series.page';
 
+import { PostComponent } from '../components/post/post.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,6 @@ import { SeriesPage } from './series.page';
     IonicModule,
     SeriesPageRoutingModule
   ],
-  declarations: [SeriesPage]
+  declarations: [SeriesPage, PostComponent]
 })
 export class SeriesPageModule {}

@@ -24,7 +24,7 @@ export class HomePage {
 	likes:number; //qtd de likes
 	dislikes:number; //qtd de dislikes
 
-	posts = [
+	posts: object[] = [
 
 		{ postTitle: "The Flash: Nora West-Allen linda nunca critiquei",
 		postId: 1,

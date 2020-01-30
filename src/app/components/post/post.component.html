@@ -1,0 +1,54 @@
+<!-- <ion-card class="card-post">
+    <ion-card-header>
+      <ion-card-title> {{ post.postTitle }} </ion-card-title>
+      <ion-card-subtitle> @{{ post.userName }} </ion-card-subtitle>
+      <div class="spoiler" *ngIf="post.spoiler">
+        <ion-icon name="alert" color="warning"></ion-icon>
+        <p> Atenção! Este post contém spoiler!! </p>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+          <p> {{ post.contentText }} </p>
+          <img *ngIf="post.attachment" src="../../assets/{{ post.contentFile }}"> 
+          <p id="date"> {{ post.date }} </p>
+          <div class="reaction">
+            <div>
+              <ion-icon size="large" name="thumbs-up" (click)="likePost(post)" color="{{ post.likeState ? 'primary' : 'medium' }}"></ion-icon>  
+              <p> {{ post.likes }} </p>
+            </div>
+            <div>
+              <ion-icon size="large" name="thumbs-down" (click)="unlikePost(post)" color="{{ post.dislikeState ? 'primary' : 'medium' }}"></ion-icon>  
+              <p> {{ post.dislikes }} </p>
+            </div>
+          </div>
+    </ion-card-content>
+</ion-card> -->
+
+<!-- ESTRUTURA DO COMPONENTE POST -->
+<ion-card class="card-post">
+    <ion-card-header>
+      <ion-card-title> Titulo </ion-card-title>
+      <ion-card-subtitle> @username </ion-card-subtitle>
+      <div class="spoiler">
+        <ion-icon name="alert" color="warning"></ion-icon>
+        <p> Atenção! Este post contém spoiler!! </p>
+      </div>
+    </ion-card-header>
+
+    <ion-card-content>
+          <p> Conteúdo </p>
+          <img src="../../assets/quintatemporada.jpg"> 
+          <p id="date"> Data </p>
+          <div class="reaction">
+            <div>
+              <ion-icon size="large" name="thumbs-up"></ion-icon>  
+              <p> Likes </p>
+            </div>
+            <div>
+              <ion-icon size="large" name="thumbs-down"></ion-icon>  
+              <p> Dislikes </p>
+            </div>
+          </div>
+    </ion-card-content>
+</ion-card>

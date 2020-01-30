@@ -21,9 +21,13 @@
             </ion-card-header>
 
             <ion-card-content>
-                  <p> {{ post.contentText }} </p>
-                  <img *ngIf="post.attachment" src="../../assets/{{ post.contentFile }}"> 
-                  <p id="date"> {{ post.date }} </p>
+                  <div>
+                    <p> {{ post.contentText }} </p>
+                    <img *ngIf="post.attachment" src="../../assets/{{ post.contentFile }}"> 
+                  </div>
+                  <div id="date">
+                    <p> {{ post.date }} </p>
+                  </div>
                   <div class="reaction">
                     <div>
                       <ion-icon size="large" name="thumbs-up" (click)="likePost(post)" color="{{ post.likeState ? 'primary' : 'medium' }}"></ion-icon>  
