@@ -7,26 +7,22 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-	title = 'the jungle!!!';
 	constructor() {}
-
-
+	
 	//ATRIBUTOS DA CLASSE
-	Post: object = {
-		postTitle: 'The Flash',
-		postId: 1, //identificador do post
-		userId: 4, //identificador do usuário que fez o post
-		userName: 'gabrielejandres',
-		attachment: true, //indica se o post acompanha anexo
-		contentText: 'Quinta temporada é a melhor', //conteúdo textual do post
-		contentFile: 'quintatemporada.png', //anexo do post
-		date: '27/01/2020', //data que o post foi feito
-		spoiler: true,
-		likeState: true,
-		dislikeState: false,
-		likes: 20,
-		dislikes: 3
-	}
+	postTitle:string;
+	postId:number; //identificador do post
+	userId:number; //identificador do usuário que fez o post
+	userName:string;
+	attachment:boolean; //indica se o post acompanha anexo
+	contentText:string; //conteúdo textual do post
+	contentFile:string; //anexo do post
+	date:string; //data que o post foi feito
+	spoiler:boolean; //indica se há spoiler
+	likeState:boolean; //indica se o usuario curtiu o post
+	dislikeState:boolean; //indica se o usuario deu dislike no post
+	likes:number; //qtd de likes
+	dislikes:number; //qtd de dislikes
 
 	posts = [
 
